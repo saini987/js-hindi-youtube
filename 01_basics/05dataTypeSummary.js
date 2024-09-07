@@ -20,7 +20,7 @@ const id = Symbol("1245")
 //this is bigint data type
 const number = 1223456566n
 
-console.log(id)
+//console.log(id)
 
 // non primative data type
 //array
@@ -36,4 +36,31 @@ let myObjact = {
 let hello = function(){
     console.log("HI ROHIT");
 }
-console.log(typeof brothers)
+//console.log(typeof brothers)
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//stack mamory
+
+let location = "saharanpur"
+let newLocation = location
+newLocation = "meerut"
+
+console.log(location)
+console.log(newLocation)
+
+// heap memory
+
+let oneUser = {
+    email: "rohit@gmail.com",
+    password: "rohitsaini"
+}
+let anotherUser = oneUser
+
+console.log(anotherUser)
+
+anotherUser.email = "mohit@gmail.com"
+
+console.log(oneUser.email)
+console.log(anotherUser.email)
