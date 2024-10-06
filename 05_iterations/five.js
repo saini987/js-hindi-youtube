@@ -26,4 +26,4 @@ const myCoding = [
 
 myCoding.forEach( function(item){
     console.log(item.langugeName)
-})
+}) 
