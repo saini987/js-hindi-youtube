@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aor code</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: aqua;
+    }
+</style>
+<body>
+    <ul class="Language">
+        <li>Learn JAVASCRIPT with chai aor code youtube channel</li>
+    </ul>
+</body>
+</html>
+<script>
+
+    // add
+
+    function addLanguage(LanguaegName){
+        const li = document.createElement('li');
+        li.innerHTML = `${LanguaegName}`
+        const add = document.querySelector('.Language')
+        add.appendChild(li)
+    }
+    addLanguage("HTML & CSS with apnaCollage")
+    addLanguage("PYTHON with internershala")
+    addLanguage("javascript with apna college")
+    
+
+    // ootimazi mathod
+    function adddOPT (LName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(LName))
+        document.querySelector('.Language').appendChild(li)
+    }
+    adddOPT("SQL with WSQTECH")
+    adddOPT("React with udmy")
+
+// Edit
+
+    const IVth = document.querySelector("li:nth-child(5)")
+    console.log(IVth)
+    // IVth.innerHTML = "C language"
+    const newLi = document.createElement("li")
+    newLi.textContent = "C language"
+    IVth.replaceWith(newLi)
+
+    // Remove
+
+const LastRemove = document.querySelector("li:last-child")
+console.log(LastRemove)
+LastRemove.remove()
+</script>
