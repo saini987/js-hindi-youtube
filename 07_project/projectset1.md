@@ -2,6 +2,7 @@
 
 # project link
 
+project 1 solved
 ```javascript
 console.log("rohit)
 const buttons = document.querySelectorAll('.button')
@@ -30,4 +31,27 @@ buttons.forEach(function (button){
   })
 })
 
+```
+
+project 2 solved
+```javascript
+const form = document.querySelector('form')
+form.addEventListener('submit', function(h){
+  h.preventDefault();
+
+ const height = parseInt(document.querySelector('#height').value);
+ const weight = parseInt(document.querySelector('#weight').value);
+ const results = document.querySelector('#results');
+
+ if(height === " " || height < 0 || isNaN(height)){
+   results.innerHTML = `please enter the hight ${height}`
+ }
+ else if(weight === " " || weight < 0 || isNaN(weight)){
+   results.innerHTML = `please enter the weight ${weight}`
+ } else {
+   const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+
+   results.innerHTML = `<span>${bmi}</span>`
+ }
+})
 ```
