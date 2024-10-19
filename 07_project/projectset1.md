@@ -30,7 +30,6 @@ buttons.forEach(function (button){
     }
   })
 })
-
 ```
 
 project 2 solved
@@ -54,4 +53,14 @@ form.addEventListener('submit', function(h){
    results.innerHTML = `<span>${bmi}</span>`
  }
 })
+```
+project solove 3
+```javascript
+const clock = document.getElementById('clock')
+
+setInterval(function (){
+  const date = new Date();
+// console.log(date.toLocaleTimeString())
+clock.innerHTML = date.toLocaleTimeString()
+},1000)
 ```
