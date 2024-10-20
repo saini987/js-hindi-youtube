@@ -68,6 +68,8 @@ clock.innerHTML = date.toLocaleTimeString()
 project solve 4
 
 ```javascript
+
+
 let randomNo = parseInt((Math.random() * 100 +1))
 
 const userInput = document.querySelector('#guessField');
@@ -149,7 +151,13 @@ function endGame(){
 function newGame(guess){
   const newGameButtoin  = document.querySelector('#newGame')
   newGameButtoin.addEventListener('click',function(e){
-    randomNo = parseInt((Math.random() * 100 +1))
+    randomNo = parseInt((Math.random() * 100 +1));
+    preGue = []
+    numGuss = 1
+    preGuess.innerHTML = ''
+    remaningGuss.innerHTML =`${11 - numGuss}`
+    userInput.removeAttribute('disabled')
+    startOver.removeChild(p)
     playGame = true
   })
 }
