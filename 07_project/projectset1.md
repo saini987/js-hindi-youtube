@@ -162,3 +162,37 @@ function newGame(guess){
   })
 }
 ```
+project solove 5
+
+```javascript
+// genrate a random color
+
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+let stopChangeId;
+
+const startChangingColor = function () {
+
+  function changeBg() {
+    document.body.style.backgroundColor = randomColor();
+  }
+  stopChangeId = setInterval(changeBg, 1000);
+};
+
+const stopChangingColor = function () {
+  clearInterval(stopChangeId)
+};
+
+document.querySelector('#start').addEventListener('click', startChangingColor);
+
+document.querySelector('#stop').addEventListener('click', stopChangingColor);
+
+
+
+```
